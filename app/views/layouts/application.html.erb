@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JobsboardApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header class="navbar navbar-fixed-top">
+	<div class="container">
+		<%= link_to image_tag("Job-Board.png", alt: "Job Board Logo", size: "100x50"), 'https://medium.com/@riklomas/how-to-create-a-simple-jobs-board-in-ruby-on-rails-ev		en-if-youve-never-coded-before-9b296c4df483#.eswsj7ny2', id: 'job-board-logo' %>
+		<nav>
+			<ul class="nav navbar-nav navbar-right">
+				<li><%= link_to "Home",root_path %></li>
+				<li><%= link_to "New",new_job_path %></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<%= yield %>
+
+<footer class="footer">
+	Based on the website found 
+	<a href="https://medium.com/@riklomas/how-to-create-a-simple-jobs-board-in-ruby-on-rails-ev			en-if-youve-never-coded-before-9b296c4df483#.eswsj7ny2">here</a>.
+</footer>
+
+</body>
+</html>

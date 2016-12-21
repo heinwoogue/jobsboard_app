@@ -1,0 +1,108 @@
+@import "bootstrap";
+
+body {
+	background: lightblue;
+  	color: black;
+  	font: 14px/1.5 Helvetica, Arial, sans-serif;
+  	margin: 20px auto;
+  	width: 500px;
+  	padding-top: 60px;
+}
+
+a {
+ 	color: blue;
+  	text-decoration: none;
+}	
+
+header{
+	background-color: blue;
+	color: white;
+	a {
+	 	color: white;
+	  	text-decoration: none;
+	}	
+}
+
+span.error{
+	color: red;
+}
+
+#job-board-logo{
+	float: left;
+}
+
+.input label{
+  	display: block;	
+}
+
+div.form-group div{
+	width: 50%;
+	margin: 0 auto;
+	input{
+		width: 100%;
+	}
+}
+
+/*footer*/
+footer {
+	margin-top: 45px;
+	padding-top: 5px;
+	border-top: 1px solid #eaeaea;
+	color: white;
+	background-color: #3f5861;
+	text-align: center;
+	a {
+		color: white;
+		text-decoration: underline;
+		&:hover {
+			color: lightblue;
+		}
+	}
+	ul {
+		float: right;
+		list-style: none;
+		li {
+			float: left;
+			margin-left: 15px;
+		}
+	}
+}
+
+.pagination a, .pagination span.current, .pagination span.gap {
+    float: left;
+    padding: 0 14px;
+    line-height: 38px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid #DDD;
+    border-left-width: 0;
+}
+
+.pagination {
+    border-left: 1px solid #ddd;
+    .first{
+        padding : 0;
+        float: none;
+        border: none;
+    }
+    .prev {
+        padding : 0;
+        float: none;
+        border: none;
+    }
+    .page{
+        padding : 0;
+        float: none;
+        border: none;
+    }
+    .next{
+        padding : 0;
+        float: none;
+        border: none;
+    }
+    .last{
+        padding : 0;
+        float: none;
+        border: none;
+    }
+}
